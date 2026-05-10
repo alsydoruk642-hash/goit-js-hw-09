@@ -1,0 +1,27 @@
+.gallery {
+  max-width: 1440px;
+  height: 696px;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  list-style: none;
+  padding: 24px 156px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  width: calc((100% - 48px) / 3);
+  overflow: hidden;
+}
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+  object-fit: cover;
+}
+.gallery-item:hover .gallery-image {
+  transform: scale(1.05);
+}
